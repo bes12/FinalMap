@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/markers"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mapwithmarker.MapsMarkerActivity" >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.mapwithmarker.MapsMarkerActivity" >
+
+
+    </fragment>
+
+    <EditText
+        android:id="@+id/destination_et"
+        android:hint="@string/enter_destination"
+        android:inputType="text"
+        style="@style/WrappedAndCentered" />
+
+    <TextView
+        android:id="@+id/distance_tv"
+        android:layout_below="@id/destination_et"
+        style="@style/WrappedAndCentered" />
+
+    <TextView
+        android:id="@+id/time_left_tv"
+        android:layout_below="@id/distance_tv"
+        style="@style/WrappedAndCentered" />
+
+    <Button
+        android:id="@+id/miles_time_button"
+        android:layout_below="@id/time_left_tv"
+        android:text="@string/button_text"
+        android:onClick="updateTrip"
+        style="@style/WrappedAndCentered"/>
+
+</RelativeLayout>
