@@ -17,27 +17,16 @@
 
     </fragment>
 
-    <EditText
-        android:id="@+id/destination_et"
+    <TextView
+        android:id="@+id/distance"
+        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:layout_alignBottom="@id/map"
         android:hint="@string/enter_destination"
-        android:inputType="text"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:background="@color/colorMap"
         style="@style/WrappedAndCentered" />
 
-    <TextView
-        android:id="@+id/distance_tv"
-        android:layout_below="@id/destination_et"
-        style="@style/WrappedAndCentered" />
-
-    <TextView
-        android:id="@+id/time_left_tv"
-        android:layout_below="@id/distance_tv"
-        style="@style/WrappedAndCentered" />
-
-    <Button
-        android:id="@+id/miles_time_button"
-        android:layout_below="@id/time_left_tv"
-        android:text="@string/button_text"
-        android:onClick="updateTrip"
-        style="@style/WrappedAndCentered"/>
 
 </RelativeLayout>

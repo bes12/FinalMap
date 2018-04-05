@@ -21,12 +21,13 @@ public class TravelManager {
     }
 
     //return distance to current destination in miles
-    public String milesToDestination(Location current) {
+    public float milesToDestination(Location current) {
         int distance = (int) (distanceToDestination(current)/METERS_PER_MILE);
         if(distance > 1)
-            return distance + " Miles";
+            return distance;
         else
-            return "0 miles";
+            distance = 0;
+            return distance;
     }
 
     //return time from current to destination in hours and minutes
